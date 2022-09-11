@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper{
+    width: 1170px;
+    margin:  auto;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./building-4k.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+ul{
+    float: right;
+    list-style: none;
+    margin-top: -20px;
+}
+.logo{
+    color: aliceblue;
+    margin-top: 30px;
+}
+ul > li{
+    display: inline-block;
+}
+li a{
+     text-decoration: none;
+     color: aliceblue;
+     padding: 5px 10px;
+     transition: all .4s linear;
+}
+li a:hover{
+    background: rgb(255, 255, 255);
+    color: #c59595;
+}
+.welcome-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+.welcome-text>*{
+    margin-bottom: 15px;
+}
+button{
+    border: 2px solid #c5b695;
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all .3s;
+}
+button:hover{
+    background: rgb(255, 255, 255);
+    color: #c5b695;
+}
+p{
+    font-size: 20px;
+    color: #c59595;
+}
+@media screen and (max-width:450px) {
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+    h2{
+        margin-left: 10px;
+    }
+    .wrapper{
+        width: 350px;
+    }
+    .logo h2{
+        margin-top: -20px;
+    }
+    ul{
+        margin-top: 15px;
+    }
+}
